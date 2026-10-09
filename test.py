@@ -9,7 +9,6 @@ load_dotenv()
 def fetch_and_parse_data(api_url, file_format="excel", filename="output"):
 
     api_key = os.getenv("API_KEY")
-    # 1. 쿼리 파라미터를 의미 단위의 변수로 분리하여 딕셔너리로 구성
     params = {
         # 기본 요청 설정
         "method": "getList",
